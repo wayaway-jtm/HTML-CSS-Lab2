@@ -1,6 +1,10 @@
 /* Open Sans */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+
 html {
     font-family: 'Open Sans', sans-serif;
     background-color: #f9fafc;
@@ -82,7 +86,34 @@ header {
         flex: 1;
         justify-content: space-around;
     }
+
     p {
         max-width: 50%;
+    }
+
+    #btn-scroll-down {
+        width: auto;
+        align-self: center;
+        justify-self: flex-end;
+    }
+
+    .button {
+        padding: 10px 15px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+
+    body {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #spacer-div {
+        flex: 1;
     }
 }
