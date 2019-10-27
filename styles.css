@@ -63,6 +63,10 @@ header {
     border: 0;
 }
 
+.circle {
+    display: none;
+}
+
 @media only screen and (min-width: 768px) {
     nav {
         flex-direction: row;
@@ -76,6 +80,7 @@ header {
     header>a {
         align-self: center;
         padding: 2px 5px;
+        margin-right: 25px;
     }
 
     h2 {
@@ -94,7 +99,8 @@ header {
     #btn-scroll-down {
         width: auto;
         align-self: center;
-        justify-self: flex-end;
+        position: absolute;
+        bottom: 10px;
     }
 
     .button {
@@ -113,7 +119,33 @@ header {
         flex-direction: column;
     }
 
-    #spacer-div {
-        flex: 1;
+    .circle {
+        display: block;
+        border-radius: 50%;
+        position: absolute;
+    }
+
+    #lg-circle {
+        background-color: rgba(247, 136, 167, 0.6);
+        width: 250px;
+        height: 250px;
+        right: 100px;
+        top: 125px;
+    }
+
+    #md-circle {
+        background-color: rgba(247, 193, 162, 0.7);
+        width: 200px;
+        height: 200px;
+        right: 25px;
+        top: 275px;
+    }
+
+    #sm-circle {
+        background-color:  rgba(207, 130, 213, 0.6);
+        width: 150px;
+        height: 150px;
+        right: 25px;
+        top: 175px;
     }
 }
